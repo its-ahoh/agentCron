@@ -1,0 +1,10 @@
+{
+  "name": "agent-cron",
+  "version": "0.1.0",
+  "description": "Always-on wake-up service shared by AI agents: timers + event inbox + a scheduler that checks every minute.",
+  "type": "module",
+  "bin": { "agent-cron": "bin/agent-cron.js" },
+  "engines": { "node": ">=22.13" },
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
