@@ -1,8 +1,8 @@
-# agent-cron
+# agentCron
 
 **English** | [中文](README.zh-CN.md)
 
-A small always-on service shared by several AI agents.
+A small always-on service shared by several AI agents. The command it installs is `agent-cron`.
 The design follows [Building always-on agents](https://claude.com/resources/articles/building-always-on-agents). For the reasoning and trade-offs, see [PLAN.md](PLAN.md).
 
 Agents sleep most of the time. The service looks once a minute. It wakes an agent only when there is work, and skips otherwise, so idle time costs no tokens.
@@ -23,8 +23,8 @@ A timer never starts an agent. When a timer is due, and its gate passes, it only
 ## Install
 
 ```sh
-git clone https://github.com/its-ahoh/agent-cron.git
-cd agent-cron
+git clone https://github.com/its-ahoh/agentCron.git
+cd agentCron
 npm link                       # gives you the agent-cron command; or use ./bin/agent-cron.js
 agent-cron connect claude      # register an agent
 agent-cron service install     # macOS: start at login, restart if it dies

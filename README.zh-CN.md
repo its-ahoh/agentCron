@@ -1,8 +1,8 @@
-# agent-cron
+# agentCron
 
 [English](README.md) | **中文**
 
-给多个 AI agent 共用的 always-on 小服务。
+给多个 AI agent 共用的 always-on 小服务。装好后的命令叫 `agent-cron`。
 设计参考 [Building always-on agents](https://claude.com/resources/articles/building-always-on-agents)。设计和取舍见 [PLAN.md](PLAN.md)（英文）。
 
 agent 平时睡觉。服务每分钟看一眼。有事才叫醒，没事跳过，不花 token。
@@ -23,8 +23,8 @@ agent 平时睡觉。服务每分钟看一眼。有事才叫醒，没事跳过�
 ## 装
 
 ```sh
-git clone https://github.com/its-ahoh/agent-cron.git
-cd agent-cron
+git clone https://github.com/its-ahoh/agentCron.git
+cd agentCron
 npm link                       # 之后有 agent-cron 命令。不想 link 就用 ./bin/agent-cron.js
 agent-cron connect claude      # 连上一个 agent
 agent-cron service install     # macOS：开机自启，挂了自己重启

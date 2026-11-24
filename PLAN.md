@@ -1,4 +1,4 @@
-# agent-cron design
+# agentCron design
 
 Reference article: <https://claude.com/resources/articles/building-always-on-agents>
 
